@@ -1,0 +1,81 @@
+html {
+    font-size: 100%;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.second_section {
+    width: 100%;
+    height: auto;
+}
+
+.second_section img {
+    width: 100%;
+    height: auto;
+}
+
+.third_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+
+.third_section::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120vw; /* 375px のとき 450px になるように設定 */
+    max-width: 450px; /* 最大幅を450pxに制限 */
+    height: 100px;
+    background-color: #e5e5e5;
+    border-radius: 250px / 50px;
+}
+
+.third_title {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.third_title p {
+    flex-shrink: 0;
+    font-size: 20px;
+    font-family: "Noto Serif JP";
+    font-weight: 400;
+    margin: 30px 0 10px 0;
+}
+
+.third_subtitle {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.third_comment-box {
+
+}
+
+.third_dots {
+
+}
+
+.third_texts {
+
+}
+
+.third_box {
+
+}
+
+.third_arrow {
+
+}
+
