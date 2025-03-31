@@ -1,81 +1,125 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0; /* Remove default body margin */
 }
 
 header img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .second_section {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .second_section img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .third_section {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .third_section::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120vw; /* 375px のとき 450px になるように設定 */
-    max-width: 450px; /* 最大幅を450pxに制限 */
-    height: 100px;
-    background-color: #e5e5e5;
-    border-radius: 250px / 50px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120vw; /* 375px のとき 450px になるように設定 */
+  max-width: 100%; /* 最大幅を450pxに制限 */
+  height: 100px;
+  background-color: #e4e4e4;
+  border-radius: 270px / 50px; /* 楕円の形を維持 */
+  clip-path: inset(0 0 0 0); /* クリッピングなし */
+}
+
+.third_section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120vw;
+  max-width: 100%;
+  height: 50px; /* 下半分の長方形部分 */
+  background-color: #e4e4e4;
+  bottom: -50px;
+  z-index: -1;
 }
 
 .third_title {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .third_title p {
-    flex-shrink: 0;
-    font-size: 20px;
-    font-family: "Noto Serif JP";
-    font-weight: 400;
-    margin: 30px 0 10px 0;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-family: "Noto Serif JP";
+  font-weight: 400;
+  margin: 30px 0 28px 0;
+}
+
+.third_contents {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: auto;
 }
 
 .third_subtitle {
-    width: 100%;
-    height: auto;
-    position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.third_subtitle p {
+  font-family: "Noto Serif JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: regular;
+  position: relative;
+}
+
+.third_subtitle span {
+  box-shadow: inset 0px -5px 0px 0px #c5d9ff;
+}
+
+.third_subtitle img {
+  position: absolute;
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -8px;
 }
 
 .third_comment-box {
-
 }
 
 .third_dots {
-
 }
 
 .third_texts {
-
 }
 
 .third_box {
-
 }
 
 .third_arrow {
-
 }
-
