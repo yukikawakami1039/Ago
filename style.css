@@ -72,9 +72,9 @@ header img {
 .third_title p {
   flex-shrink: 0;
   font-size: 20px;
-  font-family: "Noto Serif JP";
-  font-weight: 400;
-  margin: 30px 0 28px 0;
+  font-family: "Noto Serif JP", serif;
+  font-weight: medium;
+  margin: 30px 0 10px 0;
 }
 
 .third_contents {
@@ -90,15 +90,27 @@ header img {
 }
 
 .third_subtitle p {
-  font-family: "Noto Serif JP";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: regular;
-  position: relative;
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: regular;
+    position: relative;
 }
 
 .third_subtitle span {
-  box-shadow: inset 0px -5px 0px 0px #c5d9ff;
+  position: relative;
+  z-index: 1;
+}
+
+.third_subtitle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 6px;
+  background-color: #c5d9ff;
+  z-index: -1;
 }
 
 .third_subtitle img {
@@ -110,6 +122,24 @@ header img {
 }
 
 .third_comment-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third_comment-box p {
+  width: 95%;
+  border-radius: 10px;
+  background: #FFF;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: regular;
+  line-height: 20px;
+  padding: 16px 11px 15px 12px;
+  text-align: left;
 }
 
 .third_dots {
