@@ -422,6 +422,144 @@ header img {
     margin: 15px 0;
 }
 
+.sixth_section {
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.sixth_title {
+    width: 100%;
+    height: auto;
+    margin: 26px 0;
+    background: #F5F5F5;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+.sixth_maintitle {
+    flex-shrink: 0;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.sixth_subtitle {
+    margin: 22px 0;
+    width: 100%;
+    height: auto;
+}
+
+.sixth_subtitle img {
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+}
+
+.sixth_subtitle p {
+    margin: 0;
+    position: relative;
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.sixth_box {
+    background: #FFF9F2;
+    width: 90%;
+    height: auto;
+}
+
+.box_title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 24px 0;
+}
+
+.box_title p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.box_number {
+    position: absolute;
+    font-family: "Noto Serif JP", serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    transform: translate(10px, -90px);
+}
+
+.box_number span {
+    font-size: 30px;
+}
+
+.box_corner {
+    width: 75px;
+    height: auto;
+    position: absolute;
+    left: 5%;
+}
+
+.box_text img {
+    width: 100%;
+}
+
+.box_text p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.6px;
+}
+
+.box_text li {
+    text-align: left;
+    margin: 0 15px 0 35px;
+}
+
+.box_text-img1 {
+    width: 45%;
+    max-width: 131px;
+    height: auto;
+}
+
+.box_text-img2 {
+    width: 45%;
+    height: auto;
+}
+
+.box_text_minihilight {
+
+}
+
+.box_text_hilight {
+
+}
+
+.box_text-underline {
+
+}
+
+.tunagi {
+    width: 100%;
+}
+
 
 
 @media screen and (max-width: 378px) {
