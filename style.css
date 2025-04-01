@@ -478,7 +478,7 @@ header img {
     background: #FFF9F2;
     width: 90%;
     height: auto;
-    box-shadow: 0 0 0 3px #333; /* 例：影の色を濃いグレー (#333) にする場合 */
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
     padding-bottom: 30px;
 }
 
@@ -514,11 +514,7 @@ header img {
     width: 75px;
     height: auto;
     position: absolute;
-    left: 5%;
-}
-
-.box_text img {
-
+    left: 4.8%;
 }
 
 .box_text p {
@@ -622,6 +618,7 @@ ul {
 
 .tunagi {
     width: 100%;
+    margin-top: 5px;
 }
 
 
@@ -629,5 +626,9 @@ ul {
 @media screen and (max-width: 378px) {
     .space-3 {
         display: none;
+    }
+
+    .box_title p  {
+        font-size: 15px;
     }
 }
