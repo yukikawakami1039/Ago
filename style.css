@@ -73,8 +73,8 @@ header img {
   flex-shrink: 0;
   font-size: 20px;
   font-family: "Noto Serif JP", serif;
-  font-weight: medium;
-  margin: 30px 0 10px 0;
+  font-weight: 500;
+  margin: 30px 0 30px 0;
 }
 
 .third_contents {
@@ -87,14 +87,16 @@ header img {
   width: 100%;
   height: auto;
   position: relative;
+  margin: 0 0 40px 0;
 }
 
 .third_subtitle p {
     font-family: "Noto Serif JP", serif;
     font-size: 15px;
     font-style: normal;
-    font-weight: regular;
+    font-weight: 400;
     position: relative;
+    margin: 0;
 }
 
 .third_subtitle span {
@@ -136,20 +138,203 @@ header img {
   font-family: "Noto Serif JP", serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: regular;
+  font-weight: 300;
   line-height: 20px;
   padding: 16px 11px 15px 12px;
   text-align: left;
+  margin: 0;
 }
 
-.third_dots {
+.circles-container {
+  position: relative;
+  width: 300px;
 }
 
-.third_texts {
+.circle {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  right: 10%;
+  transform: translateX(-50%);
+}
+
+.circle-2 {
+  width: 10px;
+  height: 10px;
+  top: 14px;
+  right: 14%;
+  transform: translateX(-50%);
+}
+
+.circle-3 {
+  width: 10px;
+  height: 10px;
+  top: 30px;
+  right: 17%;
+  transform: translateX(-50%);
+}
+
+.third_comment-box img {
+  width: 133px;
+  height: auto;
+  position: relative;
+}
+
+.third_texts p {
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 30px 20px 30px;
+  text-align: left;
 }
 
 .third_box {
+  background-color: #404040;
+  padding: 0 5px 0 5px;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+}
+
+.third_box p {
+  color: #FFF;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 2px 5px 2px 5px;
 }
 
 .third_arrow {
+  width: 100px;
+  height: 20px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.third_arrow::before, 
+.third_arrow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #333;
+}
+
+.third_arrow::before {
+  left: 0;
+  transform: rotate(20deg);
+  transform-origin: right center;
+}
+
+.third_arrow::after {
+  right: 0;
+  transform: rotate(-20deg);
+  transform-origin: left center;
+}
+
+.fourth_section {
+  width: 100%;
+  height: auto;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.fourth_title p {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.fourth_comment-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.fourth_comment-box p {
+  width: 95%;
+  border-radius: 10px;
+  background: #FFF;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 16px 11px 15px 12px;
+  text-align: left;
+  margin: 0;
+}
+
+.fourth_hilight {
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.fourth_kakko {
+  font-weight: 400;
+}
+
+.space-3 {
+  display: block;
+}
+
+.fourth_triangle {
+  position: absolute;
+  right: 40px;
+  width: 16px;
+  height: 28px;
+  background-color: #fff;
+  transform: rotate(-27.717deg);
+  border-right: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.fourth_women {
+  width: 133.333px;
+  height: 100px;
+}
+
+.fourth_img {
+
+}
+
+.fourth_text {
+
+}
+
+.third_box {
+
+}
+
+.third_arrow {
+
+}
+
+@media screen and (min-width: 378px) {
+
 }
