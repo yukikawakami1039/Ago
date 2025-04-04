@@ -496,6 +496,32 @@ header img {
     line-height: 25px;
 }
 
+.box_title2 {
+    width: 100%;
+    height: auto;
+    margin: 40px auto 24px auto;
+}
+
+.box_title2 p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.box_title2 span {
+    font-size: 13px;
+}
+
+.sixth_space {
+    display: block;
+}
+
+.sixth_space1 {
+    display: none;
+} 
+
 .box_number {
     position: absolute;
     font-family: "Noto Serif JP", serif;
@@ -507,6 +533,20 @@ header img {
 }
 
 .box_number span {
+    font-size: 30px;
+}
+
+.box_number2 {
+    position: absolute;
+    font-family: "Noto Serif JP", serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    transform: translate(10px, -113px);
+}
+
+.box_number2 span {
     font-size: 30px;
 }
 
@@ -680,7 +720,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(-150%, 8px);
+    transform: translate(-33vw, 8px);
 }
 
 .seventh_titlenum1 span {
@@ -760,7 +800,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(150%, 8px);
+    transform: translate(33vw, 8px);
 }
 
 .seventh_titlenum2 span {
@@ -775,7 +815,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(120%, 5px);
+    transform: translate(29vw, 5px);
 }
 
 .seventh_titlenum1-voice span {
@@ -821,7 +861,7 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 10px
+    margin: 5px 0 5px 0;
 }
 
 .seventh_box_ribbon p {
@@ -833,12 +873,524 @@ ul {
     line-height: 30px; /* 200% */
     letter-spacing: 0.75px;
     position: relative;
+    margin: 8px;
 }
 
-.seventh_box_comment img {
+.seventh_box_comment {
     width: 100%;
     height: auto;
 }
+
+.seventh_box_comment img {
+    width: 90%;
+    height: auto;
+}
+
+.eighth_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eighth_title {
+    display: flex;
+    justify-content: center;
+}
+
+.eighth_title p {
+    flex-shrink: 0;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 25px 0 ;
+}
+
+.eighth_subtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eighth_subtitle p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.title_line {
+    width: 80%;
+    min-height: 0.025rem;
+    border-top: 0.1px solid #000;
+}
+
+.eighth_contents {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+.eighth_contents2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.eighth_contents-title {
+    background: linear-gradient(to right, #FFCCC4, #FF7D79);
+    width: 100%;
+    height: auto;
+}
+.eighth_contents-title p {
+    color: #FFF;
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.eighth_tunagi {
+    width: 100%;    
+    height: auto;
+}
+
+.eighth_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eighth_menu1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF9EA;
+}
+
+.menu_title {
+    padding: 15px 13px 15px 0;
+    white-space: nowrap;
+    max-width: 67%; 
+}
+
+.menu_title p{
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.menu_price {
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 12px;
+    white-space: nowrap;
+    border-left: 1px dotted #000;
+}
+
+.menu_price span {
+    font-size: 13px;
+}
+
+.eighth_menu2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF4D8;
+}
+
+.menu_title2 {
+    padding: 15px 9px 15px 0;
+    white-space: nowrap;
+    max-width: 67%;
+}
+
+.menu_title2 p{
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.eighth_tunagi {
+    width: 100%;
+    height: auto;
+}
+
+.eighth_menu img {
+    width: 0.1px;
+    height: 1px;
+}
+
+.eighth_menu3 {
+    width: 100%;
+    max-height: 90px;
+    display: flex;
+    flex-direction: row;
+    background: #FFF9EA;
+}
+
+.menu_title3 {
+    writing-mode: vertical-rl;
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 11px;
+}
+
+.menu_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 30px;
+    border-right: 1px dotted #000;
+}
+
+.menu_contents li {
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    white-space: nowrap;
+}
+
+.menu_price3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.menu_price3 span {
+    font-size: 20px;
+}
+
+.menu_img3 {
+    margin: 2% 0;
+}
+
+.eighth_menu_comment img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.nineth_section {
+    background: #FDF5F4;
+    padding-bottom: 40px;
+}
+
+.nineth_contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nineth_title {
+    display: flex;
+    justify-content: center;
+}
+
+.nineth_title p {
+    flex-shrink: 0;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 25px 0 ;
+}
+
+.nineth_content {
+    width: 80%;
+    text-align: left;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nineth_contents-title {
+    background: #FFE5E1;
+    padding: 15px;
+}
+
+.nineth_contents-title p {
+    color: #FF6D6A;
+    font-size: 15px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nineth_contents-answer {
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.nineth_contents-answer p {
+    font-size: 13px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.nineth_contents-answer span  {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.tenth_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF9EA;
+    padding-bottom: 40px;
+}
+
+.tenth_title {
+    text-align: center;
+}
+
+.tenth_title p {
+    position: relative;
+    font-family: "Noto Serif JP", serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 38px 0 75px 0;
+}
+
+.tenth_title span {
+    font-size: 15px;
+}
+
+.tenth_title-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.tenth_subtitle {
+    text-align: center;
+}
+
+.tenth_subtitle p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.tenth_subtitle span {
+    color: #F7514D;
+    font-size: 23px;
+}
+
+.tenth_line {
+    margin: 25px 0;
+}
+
+.tenth_text p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.tenth_contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.tenth_box {
+    background: linear-gradient(to right, #FFB7AE, #FF7E7A);
+    width: 80%;
+}
+
+.tenth_box p {
+    color: #FFF;
+    font-family: "Noto Serif JP", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 11px 0;
+}
+
+.tenth_img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.tenth_arrow {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    margin: 10px auto;
+    z-index: 2;
+}
+
+.tenth_arrow::before,
+.tenth_arrow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+}
+
+.tenth_arrow::before {
+    left: 0;
+    transform: rotate(20deg);
+    transform-origin: right center;
+}
+
+.tenth_arrow::after {
+    right: 0;
+    transform: rotate(-20deg);
+    transform-origin: left center;
+}
+
+.tenth_subtext p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.tenth_thanks p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.tenth_thanks span {
+    color: #F7514D;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.tenth_btn {
+    border-radius: 35px;
+    background: #FF7676;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.tenth_btn p {
+    color: #FFF;
+}
+
+.tenth_btn img {
+    width: 7.944px;
+    height: 11px;
+    transform: translateX(10vw);
+}
+
+.tenth_cloud {
+    position: relative;
+    z-index: 1;
+    margin-top: -240px;
+    width: 100%;
+}
+
+fotter {
+    width: 100%;
+    height: auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.footer_privacy {
+    width: 100%;
+    background: #FFE6D7;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_company {
+    width: 100%;
+    background: #FFE6D7;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: "Noto Serif JP", serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
 
 
 
@@ -847,7 +1399,153 @@ ul {
         display: none;
     }
 
+    .box_title {
+        margin: 35px 0 24px 45px;
+    }
+
     .box_title p  {
         font-size: 15px;
     }
+
+    .box_title2 {
+        margin: 35px 0 24px 45px;
+        width: 100%;
+        max-width: 240px;
+    }
+    
+    .box_title2 p {
+        font-size: 15px;
+    }
+
+    .box_imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0px);
+    }
+
+    .sixth_space {
+        display: none;
+    }
+
+    .sixth_space1 {
+        display: block;
+    } 
+    
+    .seventh_titlenum1 p {
+        color: #FF807E;
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        transform: translate(-29vw, 8px);
+    }    
+
+    .seventh_titlenum-voice p {
+        color: #FF807E;
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        transform: translate(26vw, 5px);
+    }
+
+    .seventh_titlenum2 {
+        color: #FF807E;
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+        transform: translate(29vw, 8px);
+    }
+
+    .seventh_box_ribbon p {
+        color: #FFF79D;
+        font-family: "Noto Serif JP", serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 200% */
+        letter-spacing: 0.75px;
+        position: relative;
+        margin: 5px;
+    }    
+
+    .seventh_hilight1 {
+        font-size: 22px;
+    }
+
+    .menu_contents {
+        padding: 0 7px 0 20px;
+    }
+
+    .menu_title3 {
+        padding: 7px;
+    }
+
+    .menu_break {
+        display: block;
+    }
+
+    .menu_price3 {
+        line-height: 19px;
+    }
+
+    .menu_price {
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .tenth_section {
+        padding-bottom: 30px;
+    }
+    
+    
+    .tenth_title p {
+        font-size: 19px;
+        margin: 25px 0 65px 0;
+    }
+
+    .tenth_subtitle span {
+        font-size: 19px;
+    }
+    
+    .tenth_line {
+        margin: 20px 0;
+    }
+    
+    .tenth_contents {
+        margin-top: 30px;
+    }
+    
+    .tenth_box p {
+        font-size: 13px;
+    }
+    
+    .tenth_arrow {
+        margin-bottom: 0;
+    }
+
+    .tenth_thanks p {
+        line-height: 30px;
+    }
+    
+    .tenth_thanks span {
+        font-size: 19px;
+    }
+    
+    .tenth_btn {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    
+    .tenth_cloud {
+        margin-top: -200px;
+    }   
 }
