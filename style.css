@@ -1376,14 +1376,9 @@ fotter {
     gap: 20px;
 }
 
-.footer_company {
-    width: 100%;
-    background: #FFE6D7;
-    display: flex;
-    justify-content: center;
-}
-
-footer p {
+.footer_privacy a,
+.footer_company p {
+    color: #262626;
     font-family: "Noto Serif JP", serif;
     font-size: 10px;
     font-style: normal;
@@ -1391,6 +1386,12 @@ footer p {
     line-height: 25px;
 }
 
+.footer_company {
+    width: 100%;
+    background: #FFE6D7;
+    display: flex;
+    justify-content: center;
+}
 
 
 
