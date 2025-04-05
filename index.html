@@ -538,10 +538,11 @@
         const rightAnimElements = document.querySelectorAll('.seventh_box2');
         
         // Intersection Observer の設定
+        // 要素が50%表示されたらアニメーションを開始するように変更
         const options = {
           root: null, // ビューポートをルートとして使用
           rootMargin: '0px', // マージンなし
-          threshold: 0.1 // 10%が表示されたらコールバックを実行
+          threshold: 0.5 // 50%が表示されたらコールバックを実行
         };
         
         // 要素が表示されたときのコールバック関数
@@ -549,9 +550,13 @@
           entries.forEach(entry => {
             // 要素が画面に入ったかどうかをチェック
             if (entry.isIntersecting) {
-              // 要素を表示するクラスを追加
-              entry.target.classList.add('visible');
-              // 一度表示されたら監視を解除（任意）
+              // 少し遅延させてアニメーションを開始
+              setTimeout(() => {
+                // 要素を表示するクラスを追加
+                entry.target.classList.add('visible');
+              }, 100);
+              
+              // 一度表示されたら監視を解除
               observer.unobserve(entry.target);
             }
           });
