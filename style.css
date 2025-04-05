@@ -554,7 +554,7 @@ header img {
     width: 75px;
     height: auto;
     position: absolute;
-    left: 4.8%;
+    left: -1px;
 }
 
 .box_text p {

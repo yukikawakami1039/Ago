@@ -282,7 +282,7 @@
       <div class="seventh_titlenum1">
         <p>POINT<span>01</span></p>
       </div>
-      <div class="seventh_box">
+      <div class="seventh_box seventh_box1">
         <div class="seventh_box_img">
           <img src="img\Group.png" alt="">
         </div>
@@ -294,7 +294,7 @@
       <div class="seventh_titlenum2">
         <p>POINT<span>02</span></p>
       </div>
-      <div class="seventh_box">
+      <div class="seventh_box seventh_box2">
         <div class="seventh_box_middle">
           <img src="img\月桂樹.png" alt="" />
           <p>
@@ -311,7 +311,7 @@
       <div class="seventh_titlenum1">
         <p>POINT<span>03</span></p>
       </div>
-      <div class="seventh_box">
+      <div class="seventh_box seventh_box1">
         <div class="seventh_box_ribbon">
           <img src="img\ribbon.png" alt="" />
           <p>独立開業後の定着率・満足度</p>
@@ -324,9 +324,9 @@
       <div class="seventh_titlenum-voice">
         <p>VOICES</p>
       </div>
-        <div class="seventh_box_comment">
-          <img src="img\Group_VOICES.png" alt="" />
-        </div>
+      <div class="seventh_box_comment seventh_box2">
+        <img src="img\Group_VOICES.png" alt="" />
+      </div>
     </div>
     <div class="eighth_section">
       <div class="eighth_title">
@@ -486,5 +486,95 @@
         <p>© AGO global 株式会社</p>
       </div>
     </footer>
+    <script>
+      // Intersection Observer を使用して要素が画面に表示されたかを検出
+      document.addEventListener('DOMContentLoaded', function() {
+        // アニメーション用のクラスをCSSに追加
+        const style = document.createElement('style');
+        style.textContent = `
+          .sixth_box, .nineth_content, .tenth_box {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+          }
+          
+          .sixth_box.visible, .nineth_content.visible, .tenth_box.visible {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          
+          .seventh_box1 {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+          }
+          
+          .seventh_box1.visible {
+            opacity: 1;
+            transform: translateX(0);
+          }
+          
+          .seventh_box2 {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+          }
+          
+          .seventh_box2.visible {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        `;
+        document.head.appendChild(style);
+        
+        // アニメーションを適用する要素を取得
+        const verticalAnimElements = [
+          ...document.querySelectorAll('.sixth_box'),
+          ...document.querySelectorAll('.nineth_content'),
+          ...document.querySelectorAll('.tenth_box')
+        ];
+        
+        const leftAnimElements = document.querySelectorAll('.seventh_box1');
+        const rightAnimElements = document.querySelectorAll('.seventh_box2');
+        
+        // Intersection Observer の設定
+        const options = {
+          root: null, // ビューポートをルートとして使用
+          rootMargin: '0px', // マージンなし
+          threshold: 0.1 // 10%が表示されたらコールバックを実行
+        };
+        
+        // 要素が表示されたときのコールバック関数
+        const callback = (entries, observer) => {
+          entries.forEach(entry => {
+            // 要素が画面に入ったかどうかをチェック
+            if (entry.isIntersecting) {
+              // 要素を表示するクラスを追加
+              entry.target.classList.add('visible');
+              // 一度表示されたら監視を解除（任意）
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+        
+        // Intersection Observer のインスタンスを作成
+        const observer = new IntersectionObserver(callback, options);
+        
+        // 縦方向のアニメーション要素を監視対象に追加
+        verticalAnimElements.forEach(element => {
+          observer.observe(element);
+        });
+        
+        // 左からのアニメーション要素を監視対象に追加
+        leftAnimElements.forEach(element => {
+          observer.observe(element);
+        });
+        
+        // 右からのアニメーション要素を監視対象に追加
+        rightAnimElements.forEach(element => {
+          observer.observe(element);
+        });
+      });
+      </script>
   </body>
 </html>
