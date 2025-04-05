@@ -653,7 +653,7 @@ header img {
 ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .tunagi {
@@ -1549,4 +1549,8 @@ fotter {
     .tenth_cloud {
         margin-top: -200px;
     }   
+
+    ul {
+        gap: 8px;
+    }
 }
