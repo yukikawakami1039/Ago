@@ -1,6 +1,10 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 *,
@@ -11,6 +15,7 @@ html {
 
 body {
     margin: 0;
+    max-width: 425px;
     /* Remove default body margin */
 }
 
@@ -720,7 +725,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(-33vw, 8px);
+    transform: translate(-145px, 8px);
 }
 
 .seventh_titlenum1 span {
@@ -800,7 +805,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(33vw, 8px);
+    transform: translate(145px, 8px);
 }
 
 .seventh_titlenum2 span {
@@ -815,11 +820,7 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: 30px;
-    transform: translate(29vw, 5px);
-}
-
-.seventh_titlenum1-voice span {
-    font-size: 30px;
+    transform: translate(125px, 5px);
 }
 
 .seventh_box_middle {
@@ -1203,6 +1204,7 @@ ul {
 
 .tenth_title-img {
     width: 100%;
+    max-width: 425px;
     height: auto;
     position: absolute;
 }
