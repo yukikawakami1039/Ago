@@ -16,12 +16,24 @@ html {
 body {
     margin: 0;
     max-width: 425px;
-    /* Remove default body margin */
+    background: #FFF;
+    z-index: 1;
 }
 
 header img {
     width: 100%;
     height: auto;
+}
+
+header,
+.second_section,
+.third_title,
+.eighth_section {
+    background: #FFF;
+}
+
+.pc_background {
+    display: none;
 }
 
 .second_section {
@@ -1395,7 +1407,16 @@ fotter {
     justify-content: center;
 }
 
-
+@media screen and (min-width: 425px) {
+    .pc_background {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: -2;
+        left: 0;
+    }
+}
 
 @media screen and (max-width: 378px) {
     .space-3 {
