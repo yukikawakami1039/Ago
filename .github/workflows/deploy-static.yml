@@ -23,4 +23,4 @@ jobs:
       # ステップ3：rsyncでXserverにファイルをアップロード
       - name: Deploy static files to Xserver
         run: |
-          rsync -avz --delete ./phk37891@183.181.89.2:/home/phk37891/public_html/
+          rsync -avz --delete ./ phk37891@183.181.89.2:/home/phk37891/public_html/
