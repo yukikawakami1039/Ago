@@ -1,0 +1,26 @@
+name: Deploy Static Site to Xserver  # ワークフロー名
+
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpush時にトリガーされる
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # GitHub上の仮想Linuxマシンで動く
+
+    steps:
+      # ステップ1：コードをGitHubリポジトリからチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # ステップ2：SSH接続の準備（秘密鍵を使う）
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.XSERVER_SSH_KEY }}
+
+      # ステップ3：rsyncでXserverにファイルをアップロード
+      - name: Deploy static files to Xserver
+        run: |
+          rsync -avz --delete ./ ユーザー名@サーバーIP:/home/ユーザー名/public_html/your-site/
