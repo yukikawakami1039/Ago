@@ -80,17 +80,12 @@ header,
   position: absolute;
   left: 50%;
   transform: translate(-50%, -5px);
-  width: 120vw;
-  /* 375px のとき 450px になるように設定 */
-  max-width: 100%;
-  /* 最大幅を450pxに制限 */
+  width: 100%;
   height: 100px;
   background-color: #e2f4f5;
   border-radius: 270px 270px 0 0 / 50px 50px 0 0;
-  /* 楕円の形を維持 */
   clip-path: inset(0 0 0 0);
   z-index: -1;
-  /* クリッピングなし */
 }
 
 .third_title {
@@ -704,6 +699,7 @@ ul {
   justify-content: center;
   text-align: center;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .seventh_title {
