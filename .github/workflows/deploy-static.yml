@@ -1,28 +1,26 @@
-name: Deploy Static Site to Xserver  # ワークフロー名
+name: Deploy to Xserver          # ワークフローの名前
 
 on:
   push:
-    branches:
-      - main  # mainブランチへのpush時にトリガーされる
+    branches: [ "main" ]         # main へ push すると自動実行
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # GitHub上の仮想Linuxマシンで動く
+    runs-on: ubuntu-latest
 
     steps:
-      # ステップ1：コードをGitHubリポジトリからチェックアウト
+      # ① リポジトリのコードを取得
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      # ステップ2：SSH接続の準備（秘密鍵を使う）
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.7.0
+      # ② SCP で Xserver にアップロード
+      - name: Deploy to Xserver via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          key: ${{ secrets.XSERVER_SSH_KEY }}           # Xserver用の秘密鍵 (Secretに登録)
-          passphrase: ${{ secrets.XSERVER_SSH_PASSPHRASE }} # 秘密鍵のパスフレーズ (Secretに登録)
-          known_hosts: ${{ secrets.XSERVER_KNOWN_HOSTS }} # ★ Xserverのホストキーを登録 (後述)
-
-      # ステップ3：rsyncでXserverにファイルをアップロード
-      - name: Deploy static files to Xserver
-        run: |
-          rsync -avz --delete -e ssh ./ ${{ secrets.XSERVER_USERNAME }}@${{ secrets.XSERVER_HOSTNAME }}:${{ secrets.XSERVER_TARGET_PATH }}
+          host:        ${{ secrets.SSH_HOST }}          # 例: xs123456.xsrv.jp
+          username:    ${{ secrets.SSH_USER }}          # 例: xs123456
+          port:        ${{ secrets.SSH_PORT }}          # 10022 が既定
+          key:         ${{ secrets.SSH_KEY }}           # 秘密鍵全文
+          passphrase:  ${{ secrets.SSH_KEY_PASSPHRASE }}# 鍵にパスフレーズを設定した場合
+          source: "./**"                                # アップロード元（全ファイル）
+          target: "/home/sv8161.xserver.jp/agotherapist.com/public_html"  # デプロイ先
