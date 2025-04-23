@@ -24,3 +24,14 @@ jobs:
           passphrase:  ${{ secrets.SSH_KEY_PASSPHRASE }} # 鍵にパスフレーズを設定した場合
           source: "./**"                                # アップロード元（全ファイル）
           target: "/home/sv8161.xserver.jp/agotherapist.com/public_html"  # デプロイ先
+
+          
+      - name: Debug SSH connection
+        run: |
+          ssh -vvv -p ${{ secrets.SSH_PORT }} -i /tmp/key \
+               -o StrictHostKeyChecking=no \
+               ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} exit || true
+        env:
+          # 1 行で一時鍵ファイルを作成
+          KEY: ${{ secrets.SSH_KEY }}
+        shell: bash
