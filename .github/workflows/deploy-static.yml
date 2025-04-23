@@ -21,6 +21,6 @@ jobs:
           username:    ${{ secrets.SSH_USER }}          # 例: xs123456
           port:        ${{ secrets.SSH_PORT }}          # 10022 が既定
           key:         ${{ secrets.SSH_KEY }}           # 秘密鍵全文
-          passphrase:  ${{ secrets.SSH_KEY_PASSPHRASE }}# 鍵にパスフレーズを設定した場合
+          passphrase:  ${{ secrets.SSH_KEY_PASSPHRASE }} # 鍵にパスフレーズを設定した場合
           source: "./**"                                # アップロード元（全ファイル）
           target: "/home/sv8161.xserver.jp/agotherapist.com/public_html"  # デプロイ先
