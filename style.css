@@ -19,15 +19,18 @@ body {
   background: #fff;
   z-index: 1;
   position: relative;
+  overflow-x:hidden;
 }
 
 .wrapper {
+  width: 100%;
   margin: 0;
   max-width: 425px;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
+  overflow-x:hidden;
 }
 
 header img {
@@ -750,7 +753,7 @@ ul {
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(-145px, 8px);
+  transform: translate(-145px, 5px);
 }
 
 .seventh_titlenum1 span {
@@ -830,7 +833,7 @@ ul {
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(145px, 8px);
+  transform: translate(145px, 5px);
 }
 
 .seventh_titlenum2 span {
@@ -845,7 +848,7 @@ ul {
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(125px, 5px);
+  transform: translate(125px, 0px);
 }
 
 .seventh_box_middle {
