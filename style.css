@@ -84,9 +84,9 @@ header,
   left: 50%;
   transform: translate(-50%, -5px);
   width: 100%;
-  height: 100px;
+  height: 110px;
   background-color: #e2f4f5;
-  border-radius: 270px 270px 0 0 / 50px 50px 0 0;
+  border-radius: 450px 450px 0 0 / 94px 94px 0 0;
   clip-path: inset(0 0 0 0);
   z-index: -1;
 }
@@ -102,7 +102,7 @@ header,
 
 .third_title p {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
   margin: 30px 0 30px 0;
@@ -123,7 +123,7 @@ header,
 
 .third_subtitle p {
   font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   position: relative;
@@ -148,10 +148,11 @@ header,
 
 .third_subtitle img {
   position: absolute;
-  width: 250px;
+  width: 260px;
+  height: auto;
   left: 50%;
   transform: translateX(-50%);
-  top: -8px;
+  top: -5px;
 }
 
 .third_comment-box {
@@ -166,7 +167,7 @@ header,
   width: 95%;
   border-radius: 10px;
   background: #d8d8d8;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -212,13 +213,13 @@ header,
 }
 
 .third_comment-box img {
-  width: 133px;
+  width: 143px;
   height: auto;
   position: relative;
 }
 
 .third_text p {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -236,7 +237,7 @@ header,
 
 .third_box p {
   color: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -257,7 +258,7 @@ header,
   position: absolute;
   top: 0;
   width: 50%;
-  height: 1px;
+  height: 0.5px;
   background-color: #333;
 }
 
@@ -283,7 +284,7 @@ header,
 
 .fourth_title p {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   line-height: 25px;
@@ -304,7 +305,7 @@ header,
   width: 95%;
   border-radius: 10px;
   background: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -343,8 +344,8 @@ header,
 }
 
 .fourth_women {
-  width: 133.333px;
-  height: 100px;
+  width: 143.333px;
+  height: auto;
 }
 
 .fourth_img img {
@@ -353,7 +354,7 @@ header,
 }
 
 .fourth_text p {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -373,7 +374,7 @@ header,
 }
 
 .fifth_title p {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -383,6 +384,7 @@ header,
 .fifth_title span {
   font-weight: 500;
   font-size: 18px;
+  font-family: "Noto Serif JP", serif;
   color: #f7514d;
   letter-spacing: 0.9px;
   text-decoration-line: underline;
@@ -418,11 +420,12 @@ header,
 }
 
 .fifth_minitext {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 13px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
+  margin-top: 10px;
 }
 
 .fifth_main_text {
@@ -433,7 +436,7 @@ header,
 .fifth_main p {
   color: #fff;
   font-family: "Noto Serif JP", serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -452,6 +455,37 @@ header,
   margin: 15px 0;
 }
 
+
+.fifth_arrow {
+  width: 100px;
+  height: 20px;
+  position: relative;
+  margin: 20px auto;
+  margin-bottom: 0;
+}
+
+.fifth_arrow::before,
+.fifth_arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 0.5px;
+  background-color: #333;
+}
+
+.fifth_arrow::before {
+  left: 0;
+  transform: rotate(20deg);
+  transform-origin: right center;
+}
+
+.fifth_arrow::after {
+  right: 0;
+  transform: rotate(-20deg);
+  transform-origin: left center;
+}
+
 .sixth_section {
   width: 100%;
   height: auto;
@@ -468,6 +502,7 @@ header,
   width: 100%;
   height: auto;
   margin: 26px 0;
+  margin-bottom: 0;
   background: #fff;
   display: inline-block;
   padding-top: 25px;
@@ -475,7 +510,7 @@ header,
 
 .sixth_maintitle {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   line-height: 25px;
@@ -520,7 +555,7 @@ header,
 
 .box_title p {
   font-family: "Noto Serif JP", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
@@ -534,7 +569,7 @@ header,
 
 .box_title2 p {
   font-family: "Noto Serif JP", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 25px;
@@ -555,7 +590,7 @@ header,
 .box_number {
   position: absolute;
   font-family: "Noto Serif JP", serif;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
@@ -563,7 +598,8 @@ header,
 }
 
 .box_number span {
-  font-size: 30px;
+  font-size: 33px;
+  line-height: 0.4;
 }
 
 .box_number2 {
@@ -578,6 +614,7 @@ header,
 
 .box_number2 span {
   font-size: 30px;
+  line-height: 0.4;
 }
 
 .box_corner {
@@ -599,7 +636,7 @@ header,
 .box_text li {
   text-align: left;
   margin: 0 15px 0 35px;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -628,16 +665,22 @@ header,
 .box_img2 {
   width: 100%;
   height: auto;
+  margin: 10px 0;
 }
 
 .box_img3 {
   width: 90%;
   height: auto;
+  margin-top: 10px;
 }
 
-.box_text_minihilight {
+/* .box_text_minihilight {
   position: relative;
   z-index: 1;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .box_text_minihilight::after {
@@ -648,13 +691,13 @@ header,
   width: 100%;
   height: 6px;
   background-color: #ffd6d6;
-  z-index: -1;
-}
+  z-index: 0;
+} */
 
 .box_text_hilight {
   position: relative;
   z-index: 1;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -709,13 +752,14 @@ ul {
   width: 100%;
   height: auto;
   margin: 26px 0;
+  margin-bottom: 0;
   display: inline-block;
   padding-top: 25px;
 }
 
 .seventh_maintitle {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   line-height: 25px;
@@ -729,7 +773,7 @@ ul {
 
 .seventh_subtitle img {
   position: absolute;
-  width: 200px;
+  width: 220px;
   height: 40px;
   left: 50%;
   transform: translate(-50%, -7px);
@@ -739,7 +783,7 @@ ul {
   margin: 0;
   position: relative;
   font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -748,12 +792,12 @@ ul {
 .seventh_titlenum1 p {
   color: #ff807e;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(-145px, 5px);
+  transform: translate(-125px, 5px);
 }
 
 .seventh_titlenum1 span {
@@ -761,7 +805,7 @@ ul {
 }
 
 .seventh_box {
-  width: 90%;
+  width: 80%;
   background: #fff;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -788,7 +832,7 @@ ul {
 .seventh_aida {
   width: 100%;
   height: auto;
-  margin: 30px 0 16px 0;
+  margin-top: 30px;
 }
 
 .seventh_span2 {
@@ -828,12 +872,12 @@ ul {
 .seventh_titlenum2 {
   color: #ff807e;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(145px, 5px);
+  transform: translate(125px, 5px);
 }
 
 .seventh_titlenum2 span {
@@ -843,12 +887,12 @@ ul {
 .seventh_titlenum-voice p {
   color: #ff807e;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
-  transform: translate(125px, 0px);
+  transform: translate(110px, 0px);
 }
 
 .seventh_box_middle {
@@ -863,6 +907,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  white-space: nowrap;
 }
 
 .seventh_hilight1 {
@@ -888,14 +933,14 @@ ul {
   height: auto;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 5px);
   margin: 5px 0 5px 0;
 }
 
 .seventh_box_ribbon p {
   color: #fff79d;
-  font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-family: "Noto Sans JP", serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 200% */
@@ -910,8 +955,9 @@ ul {
 }
 
 .seventh_box_comment img {
-  width: 90%;
+  width: 80%;
   height: auto;
+  margin-bottom: 30px;
 }
 
 .eighth_section {
@@ -930,7 +976,7 @@ ul {
 
 .eighth_title p {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   line-height: 25px;
@@ -978,10 +1024,11 @@ ul {
   background: linear-gradient(to right, #ffccc4, #ff7d79);
   width: 100%;
   height: auto;
+  padding: 5px 0;
 }
 .eighth_contents-title p {
   color: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -1008,9 +1055,10 @@ ul {
 }
 
 .menu_title {
-  padding: 15px 13px 15px 0;
+  padding: 15px 13px 15px 8px;
   white-space: nowrap;
   max-width: 67%;
+  width: 208px;
 }
 
 .menu_title p {
@@ -1027,7 +1075,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
-  padding: 12px;
+  padding: 12px 12px 12px 9px;
   white-space: nowrap;
   border-left: 1px dotted #000;
 }
@@ -1046,9 +1094,10 @@ ul {
 }
 
 .menu_title2 {
-  padding: 15px 9px 15px 0;
+  padding: 9px 9px 11px 8px;
   white-space: nowrap;
   max-width: 67%;
+  width: 208px;
 }
 
 .menu_title2 p {
@@ -1090,6 +1139,7 @@ ul {
 .menu_contents {
   display: flex;
   flex-direction: column;
+  text-align: left;
   align-items: center;
   justify-content: center;
   padding: 0 10px 0 30px;
@@ -1154,11 +1204,11 @@ ul {
 
 .nineth_title p {
   flex-shrink: 0;
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
   line-height: 25px;
-  margin: 25px 0;
+  margin: 40px 0;
 }
 
 .nineth_content {
@@ -1201,6 +1251,12 @@ ul {
   text-underline-position: from-font;
 }
 
+.nineth_contents-answer .nineth_hilight {
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+}
+
 .tenth_section {
   width: 100%;
   height: auto;
@@ -1208,7 +1264,6 @@ ul {
   flex-direction: column;
   align-items: center;
   background: #fff9ea;
-  padding-bottom: 40px;
 }
 
 .tenth_title {
@@ -1218,7 +1273,7 @@ ul {
 .tenth_title p {
   position: relative;
   font-family: "Noto Serif JP", serif;
-  font-size: 23px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -1226,7 +1281,7 @@ ul {
 }
 
 .tenth_title span {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .tenth_title-img {
@@ -1242,7 +1297,7 @@ ul {
 
 .tenth_subtitle p {
   font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
@@ -1250,7 +1305,7 @@ ul {
 
 .tenth_subtitle span {
   color: #f7514d;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .tenth_line {
@@ -1259,7 +1314,7 @@ ul {
 
 .tenth_text p {
   font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -1284,7 +1339,7 @@ ul {
 
 .tenth_box p {
   color: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1312,7 +1367,7 @@ ul {
   position: absolute;
   top: 0;
   width: 50%;
-  height: 1px;
+  height: 0.4px;
   background-color: #333;
 }
 
@@ -1330,7 +1385,7 @@ ul {
 
 .tenth_subtext p {
   font-family: "Noto Serif JP", serif;
-  font-size: 13px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -1340,7 +1395,7 @@ ul {
 
 .tenth_thanks p {
   font-family: "Noto Serif JP", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
@@ -1350,7 +1405,7 @@ ul {
 
 .tenth_thanks span {
   color: #f7514d;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -1465,6 +1520,14 @@ fotter {
   line-height: 25px;
 }
 
+.footer_privacy a {
+  margin-top: 5px;
+}
+
+.footer_company p {
+  margin-bottom: 5px;
+}
+
 .footer_company {
   width: 100%;
   background: #ffe6d7;
@@ -1527,36 +1590,15 @@ fotter {
   }
 
   .seventh_titlenum1 p {
-    color: #ff807e;
-    text-align: center;
-    font-family: "Noto Serif JP", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
-    transform: translate(-29vw, 8px);
+    transform: translate(-27vw, 5px);
   }
 
   .seventh_titlenum-voice p {
-    color: #ff807e;
-    text-align: center;
-    font-family: "Noto Serif JP", serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
-    transform: translate(26vw, 5px);
+    transform: translate(23vw, 0px);
   }
 
   .seventh_titlenum2 {
-    color: #ff807e;
-    text-align: center;
-    font-family: "Noto Serif JP", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 30px;
-    transform: translate(29vw, 8px);
+    transform: translate(27vw, 5px);
   }
 
   .seventh_box_ribbon p {
@@ -1573,6 +1615,10 @@ fotter {
 
   .seventh_hilight1 {
     font-size: 22px;
+  }
+
+  .seventh_box_ribbon p {
+    font-size: 13px;
   }
 
   .menu_contents {
